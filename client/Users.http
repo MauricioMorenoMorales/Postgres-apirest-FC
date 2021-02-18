@@ -1,0 +1,28 @@
+@host = http://localhost:4444/users
+
+###
+GET {{host}}
+
+###
+GET {{host}}/1
+
+###
+POST {{host}}
+Content-Type: application/json
+
+{
+	"name":"cameron",
+	"email":"cameron@gmail.com"
+}
+
+###
+PUT {{host}}/1
+Content-Type: application/json
+
+{
+	"name":"joel",
+	"email":"joel@gmail.com"
+}
+
+###
+DELETE {{host}}/4
